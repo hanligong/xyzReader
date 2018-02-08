@@ -24,7 +24,7 @@
                     android:id="@+id/photo"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                     />
+                    android:scaleType="centerCrop" />
 
                 <View
                     android:layout_width="match_parent"
@@ -102,8 +102,9 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:src="@drawable/ic_share"
-        android:elevation="4dp"
+        android:elevation="6dp"
         android:contentDescription="@string/action_share"
+        app:layout_behavior="com.example.xyzreader.ui.MyFloatingActionButtonBehavior"
         app:borderWidth="2dp"
         app:fabSize="normal"
         app:rippleColor="#FFB90F"/>
